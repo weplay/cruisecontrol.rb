@@ -7,7 +7,7 @@
     <% Dir["#{CRUISE_DATA_ROOT}/builder_plugins/*"].each do |plugin| %>
       <% name = File.basename(plugin) %>
       <li>
-        <%= link_to Inflector.titleize(name.sub(/\.rb$/, '')), :action => 'plugins', :type => 'installed', :name => name %> 
+        <%= link_to ActiveSupport::Inflector.titleize(name.sub(/\.rb$/, '')), :action => 'plugins', :type => 'installed', :name => name %> 
       </li>
     <% end %>
 
