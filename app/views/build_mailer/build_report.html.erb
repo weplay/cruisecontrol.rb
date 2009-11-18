@@ -9,12 +9,12 @@ CHANGES
 TEST FAILURES AND ERRORS
 -----------------------
 <%= @failures_and_errors %>
+<% end -%>
 
 BUILD LOG
 ---------
 <%= @build.output %>
 
-<% end -%>
 See <%= "#{@build.url}" %> for details.
 <% else -%>
 <%= @message %>
